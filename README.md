@@ -28,3 +28,6 @@ Utilizar virtualenv
     
     Iniciar o Servidor django
         python manage.py runserver [ip servido opcional] [porta opcional] 
+
+    Criar a Aplicação
+        phone_foward/phone_foward
