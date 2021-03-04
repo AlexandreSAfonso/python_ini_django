@@ -10,7 +10,8 @@ Utilizar virtualenv
     Criar Pasta para ambiente Virtual
         python3.9 -m virtualenv [nome do projeto]
     Ativar ambiente virtual (atenção o Bash não aceita rodar scripts, pode utilizar o cmd)
-        python -m pip install django
+        source ./venv_django_0304/bin/activate
+        acesse a aplicação
     
     Instalar Django
         python -m pip install django
@@ -31,3 +32,8 @@ Utilizar virtualenv
 
     Criar a Aplicação
         phone_foward/phone_foward
+
+    Após criar o Model 
+        python manage.py makemigrations
+        e
+        python manage.py migrate
