@@ -25,7 +25,7 @@ SECRET_KEY = '0!f5!#4i&h(st3*9hvw#00@l29pv)^g6ykox+dc9wk4l*-k!3j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [] #para uso em rede, deve ser explicitado os ips 
 
 
 # Application definition
