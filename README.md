@@ -1,7 +1,10 @@
-# python_ini_django
- Python Iniciante Django
+# Python Iniciante Django
+
+Video Aula de Python com Django para um projeto POC com um CRUD baseado em SQLite
 
 
+
+## Roteiro para Configuração inicia
 Utilizar Python 3
 
 Utilizar virtualenv
