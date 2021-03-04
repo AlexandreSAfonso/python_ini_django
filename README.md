@@ -5,14 +5,15 @@ Video Aula de Python com Django para um projeto POC com um CRUD baseado em SQLit
 
 
 ## Roteiro para Configuração inicia
-Utilizar Python 3
 
-Utilizar virtualenv
-    Instalar ambiente virtual
+1. Utilizar Python 3
+
+2. Utilizar virtualenv
+    2.1 Instalar ambiente virtual
         sudo apt install python3-virtualenv
-    Criar Pasta para ambiente Virtual
+    2.2 Criar Pasta para ambiente Virtual
         python3.9 -m virtualenv [nome do projeto]
-    Ativar ambiente virtual (atenção o Bash não aceita rodar scripts, pode utilizar o cmd)
+    2.3 Ativar ambiente virtual (atenção o Bash não aceita rodar scripts, pode utilizar o cmd)
         source ./venv_django_0304/bin/activate
         acesse a aplicação
     
