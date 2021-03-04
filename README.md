@@ -9,35 +9,36 @@ Video Aula de Python com Django para um projeto POC com um CRUD baseado em SQLit
 1. Utilizar Python 3
 
 2. Utilizar virtualenv
-    2.1 Instalar ambiente virtual
+    
+2.1 Instalar ambiente virtual
         sudo apt install python3-virtualenv
-    2.2 Criar Pasta para ambiente Virtual
+2.2 Criar Pasta para ambiente Virtual
         python3.9 -m virtualenv [nome do projeto]
-    2.3 Ativar ambiente virtual (atenção o Bash não aceita rodar scripts, pode utilizar o cmd)
+2.3 Ativar ambiente virtual (atenção o Bash não aceita rodar scripts, pode utilizar o cmd)
         source ./venv_django_0304/bin/activate
         acesse a aplicação
     
-    Instalar Django
+3. Instalar Django
         python -m pip install django
 
 
-    Guardar Requerimentos de Biblioteca
+4. Guardar Requerimentos de Biblioteca
         Criar Pasta packages
         python -m pip freeze > packages/requirements.txt
     
-    Criar o projeto
+5. Criar o projeto
         django-admin startproject [nome do projeto]
     
-    Migrar o django para iniciar o projeto com banco de dados
+6. Migrar o django para iniciar o projeto com banco de dados
         python manage.py migrate
     
-    Iniciar o Servidor django
+7. Iniciar o Servidor django
         python manage.py runserver [ip servido opcional] [porta opcional] 
 
-    Criar a Aplicação
+8. Criar a Aplicação
         phone_foward/phone_foward
 
-    Após criar o Model 
+9. Após criar o Model, executar migração novamente
         python manage.py makemigrations
         e
         python manage.py migrate
