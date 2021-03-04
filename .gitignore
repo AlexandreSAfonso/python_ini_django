@@ -3,3 +3,6 @@ venv_django_0304/
 
 phone_foward/phone_foward/__pycache__
 phone_foward/db.sqlite3
+
+phone_foward/phone/__pycache__
+phone_foward/phone/migrations/__pycache__
