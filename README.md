@@ -19,3 +19,12 @@ Utilizar virtualenv
     Guardar Requerimentos de Biblioteca
         Criar Pasta packages
         python -m pip freeze > packages/requirements.txt
+    
+    Criar o projeto
+        django-admin startproject [nome do projeto]
+    
+    Migrar o django para iniciar o projeto com banco de dados
+        python manage.py migrate
+    
+    Iniciar o Servidor django
+        python manage.py runserver [ip servido opcional] [porta opcional] 
