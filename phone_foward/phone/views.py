@@ -27,28 +27,6 @@ class Index(View):
             }
         return redirect('registered_func')
 
-
-# def index(request):
-#     if request.method == 'POST':
-#         func = models.Func.create_func(
-#             phone_number = request.POST['phone_number'],
-#             alias = request.POST['alias']
-#         )
-#         context = []
-#         if func is not None:
-#             func.save()
-#             context ={
-#                 'phone_number':request.POST['phone_number'],
-#                 'alias':request.POST['alias']
-#             }
-#         else:
-#             context ={
-#                 'error': 'Funcionário não Criado. Tente Novamten :('
-#             }
-#     return render(request, 'index.html')
-
-
-
 def registered_func(request): 
     all_func = models.Func.objects.all()
     context={
@@ -72,14 +50,7 @@ class EditFunc(View):
         func.save()
         return redirect('registered_func')
 
-
-# def edit_func(request, phone_number):
-#     func = models.Func.objects.get(phone_number=phone_number)
-#     if request.method == 'POST':
-#         func.phone_number = request.POST['phone_number']
-#         func.alias = request.POST['alias']
-#         func.save()
-#         return redirect('registered_func')
-#     return render(request, 'edit-func.html',{
-#         'func':func
-#     })
+def remove_func(request, phone_number):
+    func = models.Func.objects.get(phone_number=phone_number)
+    func.delete()
+    return redirect('registered_func')
