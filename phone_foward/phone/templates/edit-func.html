@@ -7,10 +7,10 @@
     <title>Func Input</title>
 </head>
 <body>
-    <a href="{% url 'registered_func' %}">Ver Usuparios</a>
+    <a href="{% url 'index' %}">Ver Usuparios</a>
     <form method="POST" action=""> {% csrf_token %}
-        <input type="text" name="phone_number" placeholder="phone">
-        <input type="text" name="alias" placeholder="alias">
+        <input type="text" name="phone_number" placeholder="phone" value="{{ func.phone_number }}">
+        <input type="text" name="alias" placeholder="alias" value="{{ func.alias }}">
         <button type="submit">Enviar</button>
     </form>
 </body>
